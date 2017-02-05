@@ -15,6 +15,7 @@ var finalQuote;
 var authName;
 var indexOfQuote;
 
+var quoteMachine = function() {
 document.getElementById("newQuote").addEventListener("click", function(){
   
 var newArr = Object.keys(quote);
@@ -47,4 +48,5 @@ document.getElementById("quoteBy").innerHTML = authName;
 $("#tweetMe").on("click", function() {
   window.open("https://twitter.com/intent/tweet?text="+finalQuote + " " + authName);
 });
-  
+
+};
